@@ -18,7 +18,7 @@
   justify-content: center;
   position: relative;
   margin: 20px auto;
-  width: 250px;
+  width: 19%;
   height: 276px;
   background: white;
   border-radius: 75px;
@@ -29,9 +29,6 @@
   letter-spacing: 2px;
   transition: 1s box-shadow;
   text-transform: capitalize;
-}
-#profile #profile-container p {
-  background-color: white;
 }
 @media (max-width: 1335px) {
   #profile #profile-container {
@@ -52,9 +49,6 @@
   #profile #profile-container {
     width: 90%;
   }
-}
-#profile div:hover {
-  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 #profile div:hover:before, #profile div:hover:after {
   display: block;
