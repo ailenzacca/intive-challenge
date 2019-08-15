@@ -40,6 +40,7 @@ const getAllUsers = () => {
                         `<div id="pop-up">
                             <p>Username: ${info.login.username}</p>
                             <p>Email: ${info.email}</p>
+                            <p>Celular: ${info.cell}</p>
                             <p>Edad: ${info.dob.age} años</p>
                             <p class='info-pop-up'>State: ${info.location.state}</p>
                             <p class='info-pop-up'>City: ${info.location.city}</p>
