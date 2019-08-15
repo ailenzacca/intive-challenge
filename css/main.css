@@ -1,0 +1,251 @@
+#pop-up-name {
+  text-transform: capitalize;
+}
+
+.info-pop-up {
+  text-transform: capitalize;
+}
+
+#profile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+}
+#profile #profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 276px;
+  background: white;
+  border-radius: 75px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+  text-transform: capitalize;
+}
+#profile #profile-container p {
+  background-color: white;
+}
+@media (max-width: 1335px) {
+  #profile #profile-container {
+    width: 23%;
+  }
+}
+@media (max-width: 984px) {
+  #profile #profile-container {
+    width: 32%;
+  }
+}
+@media (max-width: 770px) {
+  #profile #profile-container {
+    width: 48%;
+  }
+}
+@media (max-width: 540px) {
+  #profile #profile-container {
+    width: 90%;
+  }
+}
+#profile div:hover {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+#profile div:hover:before, #profile div:hover:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background: #FDA8CF;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+#profile div:hover:after {
+  background: #F3CE5E;
+  animation: 2s counterclockwise infinite;
+}
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
+
+body {
+  background: #d9a7c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: #EECDA3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EF629F, #EECDA3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EF629F, #EECDA3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 105px;
+  margin-bottom: 50px;
+}
+header p {
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 24px;
+  transition: all 1s ease;
+}
+header p:hover {
+  color: beige;
+}
+
+footer {
+  background: #EECDA3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EF629F, #EECDA3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EF629F, #EECDA3);
+  width: 100%;
+  height: 105px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 40px;
+}
+footer p {
+  color: white;
+}
+
+#load-more-container {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  width: 100%;
+  height: 107px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#load-more-container button {
+  background: transparent;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  transition: all 1s ease;
+  height: 30px;
+  width: 121px;
+  font-size: 15px;
+}
+#load-more-container button:hover {
+  background-color: black;
+  color: white;
+}
+#load-more-container a {
+  text-decoration: none;
+}
+#load-more-container a i {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+#load-more-container a i:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
