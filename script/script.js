@@ -14,7 +14,6 @@ const getAllUsers = () => {
     .then(data => {
         console.log(data);
 
-
         for(const info of data.results){
             let newProfile = profile.cloneNode(true);
 
@@ -33,17 +32,6 @@ const getAllUsers = () => {
 
             containerProfile.appendChild(newProfile);
 
-            // buttonLoadMore.onclick = () => {
-            //     paginaActual++;
-                
-                
-            // }
-            // buttonLoadMore.onclick = () => {
-            //     paginaActual++;
-            //     getAllUsers(`https://randomuser.me/api/?page=${paginaActual}&results=50&seed=abc`)
-                
-            // }
-
             newProfile.onclick = () => {
                 Swal.fire({
                     title: `<div id='pop-up-name'>${info.name.first} ${info.name.last}</div`,
@@ -57,14 +45,6 @@ const getAllUsers = () => {
                             <p class='info-pop-up'>City: ${info.location.city}</p>
                         </div>`,
                     showCloseButton: true,
-                    // showCancelButton: true,
-                    // focusConfirm: false,
-                    // confirmButtonText:
-                    //   '<i class="fa fa-thumbs-up"></i> Great!',
-                    // confirmButtonAriaLabel: 'Thumbs up, great!',
-                    // cancelButtonText:
-                    //   '<i class="fa fa-thumbs-down"></i>',
-                    // cancelButtonAriaLabel: 'Thumbs down'
                   })
             }
             
@@ -76,16 +56,6 @@ const getAllUsers = () => {
         
     })
 }
-
-// const button = () => {
-//     paginaActual = 1;
-//     containerProfile.innerHTML = "";
-//     getAllUsers();
-//     buttonLoadMore.onclick = () => {
-//         paginaActual++;
-//         getAllUsers();
-//     }
-// }
 
 
 buttonLoadMore.onclick = () => {
