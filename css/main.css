@@ -199,7 +199,6 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-right: 40px;
 }
 footer p {
   color: white;
